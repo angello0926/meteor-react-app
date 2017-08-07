@@ -4,7 +4,7 @@ import { Tasks } from '../api/tasks.js';
 import Task from './Task.jsx';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
-
+import AccountsUIWrapper from './AccountsUIWrapper.jsx';
 class App extends React.Component {
 
     constructor(props){
@@ -48,6 +48,7 @@ class App extends React.Component {
                     <input type="checkbox" readOnly checked={this.state.hideCompleted} onClick={this.toggleState.bind(this)} />
                     <span>Hide Completed</span>
                 </label>
+                {{> loginButtons}}
                 <form className="new-task" onSubmit={this.handleSubmit.bind(this)}>
                     <input type="type" ref="textInput" placeholder="Type to add new Tasks" />
                 </form>

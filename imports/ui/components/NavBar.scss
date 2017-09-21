@@ -1,0 +1,29 @@
+@import '../../styles/utils.scss';
+
+
+.navbar-nav{
+    margin-top: 15px;
+    width: 100%;
+}
+
+.nav-item{
+    font-size: $font-size-s3;
+    margin-right: 15px;
+    color: $color-black;
+    margin-top: 20px;
+    
+    @include type-regular();
+    &.brand {
+        margin-right: 30px;
+        font-size: $font-size-m3;
+        color: $color-black;
+        @include type-headings();
+    }
+    &.active{
+        color: $color-primary;
+    }
+    &:hover{
+        color: $color-primary;
+    }
+}
+

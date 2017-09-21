@@ -1,0 +1,90 @@
+@mixin type-regular() {
+    font-family: 'Roboto', sans-serif;
+    font-style: 400;
+}
+
+@mixin type-headings() {
+    font-family: 'Anton', sans-serif;  
+    font-style: 400;
+}
+
+.type-light {
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+
+$font-size-l3: 56px;
+$font-size-l2: 48px;
+$font-size-l1: 40px;
+$font-size-m3: 28px;
+$font-size-m2: 24px;
+$font-size-m1: 20px;
+$font-size-s3: 16px;
+$font-size-s2: 14px;
+$font-size-s1: 12px;
+
+// Large fonts
+@mixin font-l3() {
+    font-size: $font-size-l3;
+    line-height: 64px;
+}
+
+@mixin font-l2() {
+    font-size: $font-size-l2;
+    line-height: 56px;
+}
+
+@mixin font-l1() {
+    font-size: $font-size-l1;
+    line-height: 48px;
+}
+
+// Medium fonts
+@mixin font-m3() {
+    font-size: $font-size-m3;
+    line-height: 32px;
+}
+
+@mixin font-m2() {
+    font-size: $font-size-m2;
+    line-height: 28px;
+}
+
+@mixin font-m1() {
+    font-size: $font-size-m1;
+    line-height: 24px;
+}
+
+// Small fonts
+@mixin font-s3() {
+    font-size: $font-size-s3;
+    line-height: 24px;
+}
+
+@mixin font-s2() {
+    font-size: $font-size-s2;
+    line-height: 20px;
+}
+
+@mixin font-s1() {
+    font-size: $font-size-s1;
+    line-height: 16px;
+}
+
+
+
+
+
+h1{
+    font-size: $font-size-l3;
+}
+
+h2{
+    font-size: $font-size-m3;
+}
+
+h3{
+    font-size:  $font-size-s3;
+}
+

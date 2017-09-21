@@ -23,8 +23,8 @@ export default class  NavBar  extends React.Component{
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav">
                 <a className="nav-item nav-link brand" href="#">TokenInsights</a>
-                <a className="nav-item nav-link" href="#">Features</a>
-                <a className="nav-item nav-link" href="#">Pricing</a>
+                <a className="nav-item nav-link" href="#">Upload ICOs</a>
+                <a className="nav-item nav-link" href="#">Get Reports</a>
                 <a className="nav-item nav-link pull-right" href="#">Login</a>
                 <a className="nav-item nav-link pull-right" href="#">Register</a>
               </div>

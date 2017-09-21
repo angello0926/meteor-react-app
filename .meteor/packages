@@ -25,3 +25,6 @@ react-meteor-data
 accounts-ui
 accounts-password
 twbs:bootstrap
+aldeed:collection2
+aldeed:autoform
+meteortoys:allthings

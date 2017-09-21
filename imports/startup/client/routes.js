@@ -1,17 +1,19 @@
 import React from 'react';
-import { Router, Route } from 'react-router';
+import { Router, Route, IndexRoute, Switch } from 'react-router';
 import createBrowserHistory from 'history/createBrowserHistory';
 // route components
-import App from '../../ui/layouts/App.jsx';
-// import ListPageContainer from '../../ui/containers/ListPageContainer.js';
-// import AuthPageSignIn from '../../ui/pages/AuthPageSignIn.js';
-// import AuthPageJoin from '../../ui/pages/AuthPageJoin.js';
-// import NotFoundPage from '../../ui/pages/NotFoundPage.js';
+import AppContainer from '../../ui/containers/AppContainer.js';
+import UploadICOsPage from '../../ui/pages/UploadICOsPage.js';
+import NotFoundPage from '../../ui/pages/NotFoundPage.js';
 const browserHistory = createBrowserHistory();
+
 export const renderRoutes = () => (
-    <Router history={browserHistory}>
-        <div>
-        <Route exact path="/" component={App}/>
-        </div>
-    </Router>
+<Router history={browserHistory}>
+    <Switch>
+    <Route exact path="/" component={AppContainer}/> 
+    <Route path="/upload-icos" component={UploadICOsPage}/>
+    <Route path="*" component={NotFoundPage}/>
+    </Switch>
+</Router>
 );
+

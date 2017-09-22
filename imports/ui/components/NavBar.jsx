@@ -1,17 +1,18 @@
 import React from 'react';
-
+import {
+  Link
+} from 'react-router-dom';
 export default class  NavBar  extends React.Component{
 
     renderUserNav(){
       return ( 
         <nav className="navbar navbar-toggleable-md navbar-light bg-faded">
-            <a className="navbar-brand" href="#">Navbar</a>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav">
-                <a className="nav-item nav-link active" href="#">Home <span className="sr-only">(current)</span></a>
-                <a className="nav-item nav-link" href="#">Features</a>
-                <a className="nav-item nav-link" href="#">Pricing</a>
-                
+              <Link className="nav-item nav-link brand" to="/">TokenInsights</Link>
+              <Link to="/upload-icos" className="nav-item nav-link">Upload ICOs</Link>
+              <Link to="/get-reports" className="nav-item nav-link">Get Reports</Link>
+              <Link to="/login" className="nav-item nav-link pull-right">Logout</Link>
               </div>
             </div>
           </nav>);
@@ -22,11 +23,11 @@ export default class  NavBar  extends React.Component{
         <nav className="navbar navbar-toggleable-md navbar-light bg-faded">
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav">
-                <a className="nav-item nav-link brand" href="#">TokenInsights</a>
-                <a className="nav-item nav-link" href="#">Upload ICOs</a>
-                <a className="nav-item nav-link" href="#">Get Reports</a>
-                <a className="nav-item nav-link pull-right" href="#">Login</a>
-                <a className="nav-item nav-link pull-right" href="#">Register</a>
+                <Link className="nav-item nav-link brand" to="/">TokenInsights</Link>
+                <Link to="/upload-icos" className="nav-item nav-link">Upload ICOs</Link>
+                <Link to="/get-reports" className="nav-item nav-link">Get Reports</Link>
+                <Link to="/login" className="nav-item nav-link pull-right">Login</Link>
+                <Link to="/register" className="nav-item nav-link pull-right">Register</Link>
               </div>
             </div>
           </nav> 
